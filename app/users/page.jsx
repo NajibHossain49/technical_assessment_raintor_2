@@ -6,6 +6,8 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import UserCard from "../components/UserCard";
 
+// Function to fetch user data with pagination
+
 const fetchUserData = async ({ pageParam = 0 }) => {
   const res = await axios.get(
     `https://tech-test.raintor.com/api/users/GetUsersList?take=5&skip=${pageParam}`
@@ -14,7 +16,6 @@ const fetchUserData = async ({ pageParam = 0 }) => {
 };
 
 const Page = () => {
-  // Infinite query with correct v5 object syntax
   const {
     data,
     fetchNextPage,
@@ -32,7 +33,7 @@ const Page = () => {
     },
   });
 
-  // Intersection Observer
+  // Intersection Observer for infinite scrolling
   const { ref, inView } = useInView();
 
   useEffect(() => {
