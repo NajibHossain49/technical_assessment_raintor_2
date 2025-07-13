@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
-import { SlReload } from "react-icons/sl";
+import { useState } from "react";
 
 // Active class for active route
 const getLinkClass = (path, currentPath) =>
@@ -65,7 +64,6 @@ const Navbar = () => {
                   <Link
                     href="/Receiver"
                     className={getLinkClass("/Receiver", pathname)}
-                    target="_blank"
                     onClick={() => setIsOpen(false)}
                   >
                     Receiver (Map)
@@ -111,7 +109,6 @@ const Navbar = () => {
               <Link
                 href="/Receiver"
                 className={getLinkClass("/Receiver", pathname)}
-                target="_blank"
               >
                 Receiver (Map)
               </Link>
