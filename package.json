@@ -11,7 +11,8 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "next": "15.3.5",
+    "@microsoft/signalr": "^8.0.7"
   },
   "devDependencies": {
     "typescript": "^5",
