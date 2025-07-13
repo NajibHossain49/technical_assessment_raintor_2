@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📍 Raintor Frontend Assessment — Real-Time Location & User Feed
 
-## Getting Started
+This project was built for the Frontend Developer technical assessment at **Raintor Ltd.** It demonstrates real-time location sharing using SignalR and infinite scrolling for a paginated user feed using Next.js.
 
-First, run the development server:
+## 🚀 Live Demo
+
+🔗 [Live App on Vercel](https://technical-assessment-raintor-2.vercel.app)
+📦 [GitHub Repository](https://github.com/NajibHossain49/technical_assessment_raintor_2)
+
+---
+
+## 🛠 Tech Stack
+
+* **Framework**: Next.js 15 (App Router)
+* **Styling**: Tailwind CSS
+* **API Handling**: React Query
+* **WebSocket**: SignalR + Custom `useSignalR` Hook
+* **Maps**: Leaflet.js
+* **Virtualization**: react-window
+* **Others**: Axios
+
+---
+
+## 🔧 Setup Instructions
 
 ```bash
+git clone https://github.com/NajibHossain49/technical_assessment_raintor_2.git
+cd technical_assessment_raintor_2
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Ensure `.env.local` is configured if needed.
+* Works out-of-the-box using public SignalR and API endpoints.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✅ Features
 
-## Learn More
+### 1. Real-Time Location Sharing (SignalR)
 
-To learn more about Next.js, take a look at the following resources:
+* User A sends live GPS coordinates
+* User B receives and displays them on a Leaflet map
+* Encapsulated via a custom `useSignalR` hook
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Infinite Scroll User Feed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Fetches user list from paginated API
+* Implements `react-window` for performance
+* Uses React Query for data handling
+* Includes loading skeletons, error fallback, and accessibility
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧑‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed with ❤️ by **Najib Hossain**  
+[GitHub](https://github.com/NajibHossain49) | [LinkedIn](https://www.linkedin.com/in/md-najib-hossain)
+
+
+
+---
+
+**Built with ❤️ using Next.js, TypeScript, and Tailwind CSS**
+
+*This project demonstrates advanced frontend development skills including responsive design, accessibility, performance optimization, and modern React patterns.*
+
+
